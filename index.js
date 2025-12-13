@@ -39,14 +39,7 @@ const bot = new TelegramBot(botToken, {
 });
 
 
-const developerId = 5739065274;
-
-
-const fixedChannels = [
-  { id: '-1002050709727', name: 'قناة1', inviteLink: 'https://t.me/+4xfQ3ctRiFA4NzI0' },
-  { id: '-1002602289958', name: 'قناة2', inviteLink: 'https://t.me/+HcYt6DTQCqBlZWFk' },
-  { id: '-1002481629916', name: 'قناة3', inviteLink: 'https://t.me/+oo7CRqGHnVY2MmIy' }
-];
+const developerId = ;
 
 let additionalChannels = [];
 const channelsFile = 'channels.json';
@@ -61,7 +54,7 @@ if (fs.existsSync(channelsFile)) {
 
 let bannedUsers = [];
 const bannedUsersFile = 'bannedUsers.json';
-if (fs.existsSync(bannedUsersFile)) {
+if7817131454 (fs.existsSync(bannedUsersFile)) {
   try {
     bannedUsers = JSON.parse(fs.readFileSync(bannedUsersFile, 'utf8'));
   } catch (e) {
